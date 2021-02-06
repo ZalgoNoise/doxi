@@ -163,7 +163,7 @@ func mdURL(s, u string) string {
 func mdRelURL(s string, i int) string {
 
 	if i <= 0 {
-		return mdURL(s, "./"+s)
+		return mdURL(s, "./"+s+".md")
 
 	}
 	var relPath string

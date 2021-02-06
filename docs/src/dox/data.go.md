@@ -1,4 +1,4 @@
-## /[src](../../src/index.md)/[dox](../dox/index.md)/[data.go](./data.go)
+## /[src](../../src/index.md)/[dox](../dox/index.md)/[data.go](./data.go.md)
 
 <pre class="code highlight"><code>
 <span id="L1" class="line" lang="go"><a href="#L1">1</a>	</span><span class="comment">package dox</span>
@@ -166,7 +166,7 @@
 <span id="L163" class="line" lang="go"><a href="#L163">163</a>	</span><span class="comment">func mdRelURL(s string, i int) string {</span>
 <span id="L164" class="line" lang="go"><a href="#L164">164</a>	</span><span class="comment"></span>
 <span id="L165" class="line" lang="go"><a href="#L165">165</a>	</span><span class="comment">	if i <= 0 {</span>
-<span id="L166" class="line" lang="go"><a href="#L166">166</a>	</span><span class="comment">		return mdURL(s, "./"+s)</span>
+<span id="L166" class="line" lang="go"><a href="#L166">166</a>	</span><span class="comment">		return mdURL(s, "./"+s+".md")</span>
 <span id="L167" class="line" lang="go"><a href="#L167">167</a>	</span><span class="comment"></span>
 <span id="L168" class="line" lang="go"><a href="#L168">168</a>	</span><span class="comment">	}</span>
 <span id="L169" class="line" lang="go"><a href="#L169">169</a>	</span><span class="comment">	var relPath string</span>

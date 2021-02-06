@@ -1,4 +1,4 @@
-## /[src](../src/index.md)/[doxi.go](./doxi.go)
+## /[src](../src/index.md)/[doxi.go](./doxi.go.md)
 
 <pre class="code highlight"><code>
 <span id="L1" class="line" lang="go"><a href="#L1">1</a>	</span><span class="comment">// Doxi is a Go source code documentation generator, which generates static</span>

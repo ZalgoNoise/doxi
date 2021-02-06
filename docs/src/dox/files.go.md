@@ -1,4 +1,4 @@
-## /[src](../../src/index.md)/[dox](../dox/index.md)/[files.go](./files.go)
+## /[src](../../src/index.md)/[dox](../dox/index.md)/[files.go](./files.go.md)
 
 <pre class="code highlight"><code>
 <span id="L1" class="line" lang="go"><a href="#L1">1</a>	</span><span class="comment">package dox</span>
