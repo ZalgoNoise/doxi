@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "doxi_lib",
+    srcs = ["doxi.go"],
+    importpath = "github.com/ZalgoNoise/doxi",
+    visibility = ["//visibility:private"],
+    deps = ["//dox"],
+)
+
+go_binary(
+    name = "doxi",
+    embed = [":doxi_lib"],
+    visibility = ["//visibility:public"],
+)
