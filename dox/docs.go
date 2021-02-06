@@ -55,6 +55,9 @@ func (d *Docs) Dir(i *Dir) *Dir {
 			if strings.Contains(srcRelPath, "/testdata") {
 				continue
 			}
+			if strings.Contains(srcRelPath, "/.git") {
+				continue
+			}
 			os.Mkdir(srcRelPath, 0755)
 			os.Mkdir(pkgRelPath, 0755)
 		}
@@ -106,8 +109,8 @@ func (d *Docs) Source(i *Dir) *Dir {
 
 			src.Read(v.Path.Get())
 			src.Link(&v)
-			//src.GenSrc(v.Source)
-			src.GenPkg(v.Source)
+			src.GenSrc(v.Source)
+			//src.GenPkg(v.Source)
 		}
 	}
 
